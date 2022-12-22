@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление нового преподавателя</title>
+</head>
+<body>
+<p>Добавление нового преподавателя</p>
+    <form action="{% url 'addsolder' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="sumbit">Добавить</button>
+    </form>
+</body>
+</html>

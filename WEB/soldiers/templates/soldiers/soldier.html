@@ -1,0 +1,7 @@
+{% extends 'soldiers/base.html' %}
+{% block content %}
+<h1>{{ so.last_name }} {{ so.first_name }} {{ so.middle_name }}</h1>
+
+<p>Телефон: {{ so.number }}</p>
+<p>Дата рождения: {{ so.birth_date }}</p>
+{% endblock %}
